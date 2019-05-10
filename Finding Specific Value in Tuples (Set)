@@ -1,0 +1,22 @@
+
+movies=[("Interstellar", 10), ("Iron Man", 8.2), ("Enchanted", 6.0), ("Avengers", 2.0)]
+
+"""for title in movies:
+  if title[1] > 7:
+    print(title[0])"""
+
+
+def rating_filter(movies_list, max_rating):
+  final_movies=[]
+
+  for title in movies_list:
+    if title[1] >= max_rating:
+      final_movies.append(title)
+
+  return final_movies
+
+
+print(rating_filter(movies, 2))
+
+
+
