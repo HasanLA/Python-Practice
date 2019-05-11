@@ -1,0 +1,10 @@
+movies = {"Endgame": 2019, "The Hobbit": 2015}
+
+
+authors= {"Hasan":['linkedin', 'linkedin.com/farhad--hasan']}
+
+print(authors['Hasan'])
+print(authors['Hasan'][0])
+print(authors['Hasan'][1])
+
+
