@@ -1,3 +1,5 @@
+#dictionaries are equivalent to Hash Maps in Java
+
 movies = {"Endgame": 2019, "The Hobbit": 2015}
 
 
@@ -6,5 +8,33 @@ authors= {"Hasan":['linkedin', 'linkedin.com/farhad--hasan']}
 print(authors['Hasan'])
 print(authors['Hasan'][0])
 print(authors['Hasan'][1])
+
+
+movies = {"Endgame": 2019, "The Hobbit": 2015}
+print(movies)
+movies["The Last Airbender"]=2006
+print(movies)
+
+my_sentence ="Hey there what are you doing hey what"
+final_dictionary={}
+for word in my_sentence.split():
+  if word not in final_dictionary:
+    final_dictionary[word]=1
+  else:
+    final_dictionary[word] +=1
+print(final_dictionary)
+
+def word_frequency(sentence):
+  final_frequency={}
+  for word in sentence.split():
+    if word not in final_frequency:
+      final_frequency[word] = 1
+    else:
+      final_frequency[word] += 1
+  return final_frequency
+
+print(word_frequency(my_sentence))
+#print(sentence.split())
+#print(len(sentence.split()))
 
 
