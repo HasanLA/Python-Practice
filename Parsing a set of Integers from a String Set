@@ -1,0 +1,23 @@
+
+#take a set of integers and add them all together
+numbers = [1,2,5]
+
+count=0
+
+for number in numbers:
+  count= count+number
+
+#print(count)
+
+
+#create a method that parses the string of numbers into integers
+
+def number_set_addition(numberset):
+  count=0
+  for number in '1 2 5'.split():
+    count = count+(int(number))
+  return count
+
+numbers_string_set=['1', '2', '5']
+
+print(number_set_addition(numbers_string_set))
